@@ -202,78 +202,385 @@ article {
   }
 
 
-  /* Empezamos a realizar first mobile a los elementos primarios del banner */
-@media screen and (max-width: 600px){
+  /* Empezamos a realizar first mobile en 199px para pantallas muy pequeñas */
+@media screen and (min-width: 199px) and (max-width: 301px){
     .titulo-banner{
       display: flex;
-      width: 230px;
+      width: 150px;
       justify-content: center;
     }
 
     .titulo-banner h1{
-      font-size: 15px;
+      font-size: 11px;
       text-align: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .text-banner{
       display: flex;
-      width: 250px;
+      width: 150px;
       justify-content: center;
       margin-top: 10px;
     }
 
     .text-banner span{
-      font-size: 12px;
+      font-size: 10px;
+      text-align: center;
       font-family: sans-serif;
       color: #ffffff;
       font-style: normal;
     }
 
     /* Estilos para el button con ubicación en banner */
-.banner button {
-  margin-top: 10px;
-  padding: 5px 25px;
-  border: unset;
-  border-radius: 5px;
-  z-index: 1;
-  color: #000000;
-  background: #ffffff;
-  position: relative;
-  -webkit-box-shadow: 4px 8px 19px -6px rgba(255, 255, 255, 0.788);
-  box-shadow: 4px 8px 19px -6px  rgba(255, 255, 255, 0.788);
-  transition: all 250ms;
-  overflow: hidden;
-}
-
-.banner button span{
-  font-family: sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.banner button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  width: 0;
-  border-radius: 5px;
-  background-color: #2b2c2c;
-  transition: all 250ms
-}
-
-.banner button:hover {
-  color: #e8e8e8;
-}
-
-.banner button:hover::before {
-  width: 100%;
+  .banner button {
+    margin-top: 10px;
+    padding: 5px 25px;
+    border: unset;
+    border-radius: 5px;
+    z-index: 1;
+    color: #000000;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 4px 8px 19px -6px rgba(255, 255, 255, 0.788);
+    box-shadow: 4px 8px 19px -6px  rgba(255, 255, 255, 0.788);
+    transition: all 250ms;
+    overflow: hidden;
   }
+
+  .banner button span{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .banner button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #2b2c2c;
+    transition: all 250ms
+  }
+
+  .banner button:hover {
+    color: #e8e8e8;
+  }
+
+  .banner button:hover::before {
+    width: 100%;
+    }
 }
+
+
+  /* Estilizamos para pantallas con un máximo de ancho de 425px */
+
+  @media screen and (min-width: 302px) and (max-width: 425px){
+    .titulo-banner{
+      display: flex;
+      width: 250px;
+      justify-content: center;
+    }
+
+    .titulo-banner h1{
+      font-size: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text-banner{
+      display: flex;
+      width: 200px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .text-banner span{
+      font-size: 13px;
+      font-family: sans-serif;
+      color: #ffffff;
+      font-style: normal;
+    }
+
+
+    /* Estilos para el button con ubicación en banner */
+  .banner button {
+    margin-top: 10px;
+    padding: 7px 30px;
+    border: unset;
+    border-radius: 5px;
+    z-index: 1;
+    color: #000000;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 4px 8px 19px -6px rgba(255, 255, 255, 0.788);
+    box-shadow: 4px 8px 19px -6px  rgba(255, 255, 255, 0.788);
+    transition: all 250ms;
+    overflow: hidden;
+  }
+
+  .banner button span{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .banner button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #2b2c2c;
+    transition: all 250ms
+  }
+
+  .banner button:hover {
+    color: #e8e8e8;
+  }
+
+  .banner button:hover::before {
+    width: 100%;
+    }
+  }
+
+
+
+  /* Estilizamos para pantallas con un máximo de ancho de 767px */
+
+  @media screen and (min-width: 426px) and (max-width: 767px){
+    .titulo-banner{
+      display: flex;
+      width: 350px;
+      justify-content: center;
+    }
+
+    .titulo-banner h1{
+      font-size: 17px;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text-banner{
+      display: flex;
+      width: 300px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .text-banner span{
+      font-size: 14px;
+      font-family: sans-serif;
+      color: #ffffff;
+      font-style: normal;
+    }
+
+
+    /* Estilos para el button con ubicación en banner */
+  .banner button {
+    margin-top: 10px;
+    padding: 7px 25px;
+    border: unset;
+    border-radius: 5px;
+    z-index: 1;
+    color: #000000;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 4px 8px 19px -6px rgba(255, 255, 255, 0.788);
+    box-shadow: 4px 8px 19px -6px  rgba(255, 255, 255, 0.788);
+    transition: all 250ms;
+    overflow: hidden;
+  }
+
+  .banner button span{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .banner button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #2b2c2c;
+    transition: all 250ms
+  }
+
+  .banner button:hover {
+    color: #e8e8e8;
+  }
+
+  .banner button:hover::before {
+    width: 100%;
+    }
+  }
+
+
+  /* Estilizamos para pantallas con un minimo de ancho de 768px & máximo de 1023px lo que corresponde a pantallas de tablets*/
+
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    .titulo-banner{
+      display: flex;
+      width: 500px;
+      justify-content: center;
+    }
+
+    .titulo-banner h1{
+      font-size: 19px;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text-banner{
+      display: flex;
+      width: 500px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .text-banner span{
+      font-size: 18px;
+      font-family: sans-serif;
+      color: #ffffff;
+      font-style: normal;
+    }
+
+
+    /* Estilos para el button con ubicación en banner */
+  .banner button {
+    margin-top: 10px;
+    padding: 7px 25px;
+    border: unset;
+    border-radius: 5px;
+    z-index: 1;
+    color: #000000;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 4px 8px 19px -6px rgba(255, 255, 255, 0.788);
+    box-shadow: 4px 8px 19px -6px  rgba(255, 255, 255, 0.788);
+    transition: all 250ms;
+    overflow: hidden;
+  }
+
+  .banner button span{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .banner button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #2b2c2c;
+    transition: all 250ms
+  }
+
+  .banner button:hover {
+    color: #e8e8e8;
+  }
+
+  .banner button:hover::before {
+    width: 100%;
+    }
+  }
+
+
+
+    /* Estilizamos para pantallas de laptops con medidad de 1024px*/
+
+    @media screen and (min-width: 1024px){
+      .titulo-banner{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+  
+      .titulo-banner h1{
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+  
+      .text-banner{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+  
+      .text-banner span{
+        font-size: 17px;
+        font-family: sans-serif;
+        color: #ffffff;
+        font-style: normal;
+      }
+  
+  
+      /* Estilos para el button con ubicación en banner */
+    .banner button {
+      margin-top: 10px;
+      padding: 10px 25px;
+      border: unset;
+      border-radius: 5px;
+      z-index: 1;
+      color: #000000;
+      background: #ffffff;
+      position: relative;
+      -webkit-box-shadow: 4px 8px 19px -6px rgba(255, 255, 255, 0.788);
+      box-shadow: 4px 8px 19px -6px  rgba(255, 255, 255, 0.788);
+      transition: all 250ms;
+      overflow: hidden;
+    }
+  
+    .banner button span{
+      font-family: sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      font-style: normal;
+    }
+  
+    .banner button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+      width: 0;
+      border-radius: 5px;
+      background-color: #2b2c2c;
+      transition: all 250ms
+    }
+  
+    .banner button:hover {
+      color: #e8e8e8;
+    }
+  
+    .banner button:hover::before {
+      width: 100%;
+      }
+    }
+  
 
 /* Se aplica el keyframes para el efecto de salida del tracking  */
 .tracking-in-expand {
