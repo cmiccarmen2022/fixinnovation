@@ -203,7 +203,7 @@ article {
 
 
   /* Empezamos a realizar first mobile a los elementos primarios del banner */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .titulo-banner{
       display: flex;
       width: 230px;
